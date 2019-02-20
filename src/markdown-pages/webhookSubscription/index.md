@@ -146,7 +146,7 @@ The final section is the snapshot, which includes the information requested in t
       "snapshot": [
         {
           "_oid": "Story:123",
-          "Owners.Name" [
+          "Owners.Name": [
             "Administrator"
           ],
           "Owners.ID": [
