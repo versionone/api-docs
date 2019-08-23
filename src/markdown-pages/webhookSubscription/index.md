@@ -70,7 +70,7 @@ We can enhance our event even more by filtering out Stories that don't meet a sp
 }
 ```
 
-Many assets in VersionOne are secured by their relationship to a Scope (Project) limiting a member's ability to access a resource. We can configure the webhook to query on behalf of a sepcific user using the `usercontext` field. Without this field, all assets independent of their relationship to Scope can produce webhooks. In the following case, only Status changes to Stories visible to Member 1002 will produce webhooks.
+Many assets in VersionOne are secured by their relationship to a Scope (Project) limiting a member's ability to access a resource. We can configure the webhook to query on behalf of a sepcific user using the `userContext` field. Without this field, all assets independent of their relationship to Scope can produce webhooks. In the following case, only Status changes to Stories visible to Member 1002 will produce webhooks.
 
 ```json
 {
@@ -146,7 +146,7 @@ The final section is the snapshot, which includes the information requested in t
       "snapshot": [
         {
           "_oid": "Story:123",
-          "Owners.Name" [
+          "Owners.Name": [
             "Administrator"
           ],
           "Owners.ID": [
