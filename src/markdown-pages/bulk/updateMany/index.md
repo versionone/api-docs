@@ -1,6 +1,6 @@
 ## Update Many
 
-Update attributes on multiple assets via a single HTTP request.
+Update attributes on multiple assets with a single HTTP request.
 
 ### Example: Find all the stories that are in the `Epic:1234` Epic and rename them
 
