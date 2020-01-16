@@ -70,7 +70,7 @@ We can enhance our event even more by filtering out Stories that don't meet a sp
 }
 ```
 
-Many assets in VersionOne are secured by their relationship to a Scope (Project) limiting a member's ability to access a resource. We can configure the webhook to query on behalf of a sepcific user using the `userContext` field. Without this field, all assets independent of their relationship to Scope can produce webhooks. In the following case, only Status changes to Stories visible to Member 1002 will produce webhooks.
+Many assets in VersionOne are secured by their relationship to a Scope (Project) limiting a member's ability to access a resource. We can configure the webhook to query on behalf of a sepcific user using the `userContext` field. Without this field, all assets independent of their relationship to Scope can produce webhooks. In the following case, only Status changes to Stories visible to Member 1002 will produce webhook events.
 
 ```json
 {
@@ -106,7 +106,7 @@ The webhook will also include information about the instigator, or the user who 
 
 Next, the webhook contains the target asset and changes, which will specify the asset on which the changes were made, as well as what those changes were.
 
-The final section is the snapshot, which includes the information requested in the `select` field of the event type definition in your webhook subscription. Say you want webhooks fired when a Story Status changes, but when you receive the webhook you want to know specific details about the Story whose Status changed. By including attributes of the Story in your `select`, you can receive that projection of the Story in the webhook `snapshot`.
+The final section is the snapshot, which includes the information requested in the `select` field of the event type definition in your webhook subscription. Say you want webhooks fired when a Story Status changes, but when you receive the webhook you want to know specific details about the Story whose Status changed. By including attributes of the Story in your `select`, you can receive that projection of the Story in the webhook `snapshot` in the same shape as the results of the `~/api/query.v1` request.
 
 ```json
 {
