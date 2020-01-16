@@ -11,15 +11,19 @@ Create a new scope and then create a new story whose scope is the newly created 
 ###### Payload:
 ```json
 [
-  "@newScope": {
-    "AssetType":"Scope",
-    "Name":"New Scope",
-    "Super": "Scope:0"
+  {
+    "@newScope": {
+      "AssetType":"Scope",
+      "Name":"New Scope",
+      "Super": "Scope:0"
+    }
   },
-  "@newStory": {
-    "AssetType":"Story",
-    "Name":"New Story",
-    "Scope": "@newScope"
+  {
+    "@newStory": {
+      "AssetType":"Story",
+      "Name":"New Story",
+      "Scope": "@newScope"
+    }
   }
 ]
 ```
