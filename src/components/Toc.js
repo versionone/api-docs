@@ -135,8 +135,8 @@ class ComplexNavigation extends React.Component {
       <ContainerTitle
         href="#"
         icon={<Logo />}
-        text="VersionOne"
-        subText="API docs"
+        text="Digital.ai"
+        subText="VersionOne API Docs"
       />
     ),
   }
