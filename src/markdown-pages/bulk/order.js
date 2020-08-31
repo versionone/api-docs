@@ -1,4 +1,5 @@
 module.exports = [
+  { title: 'preview mode', path: 'preview_mode' },
   { title: 'alias', path: 'alias' },
   { title: 'create', path: 'create' },
   { title: 'createMany', path: 'createMany' },

@@ -1,8 +1,6 @@
-## Preview Mode
+## Preview
 
-To run the query in Preview Mode append this query string to your URL:
-
-`http://V1Host/V1Instance/api/asset**?previewonly=true**`
+`http://V1Host/V1Instance/api/asset?previewonly=true`
 
 #### HTTP Request
 

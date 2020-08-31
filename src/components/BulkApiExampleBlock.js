@@ -29,8 +29,6 @@ export default class extends React.Component {
 
          return (
             <div>
-                <button disabled={isJson} onClick={this.handler(JSON)}>JSON</button>
-                <button disabled={!isJson} onClick={this.handler(YAML)}>YAML</button>
                 {codeBlock}
             </div>
         )
